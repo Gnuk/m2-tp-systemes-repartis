@@ -18,9 +18,9 @@ public class Application implements Runnable {
 		  while ( true )
 		  {
 			
-			  System.out.println("[A]Code de section critique  ");			
+			  System.out.println("[A] Code avant la  section critique  ");			
 			  System.out.println("[A] Demande d'acces SC  ");
-			  SC.r();
+			  SC.requete(Site.siteNb,'r',X.getHorloge());
 
 			  try {
 				  
