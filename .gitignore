@@ -1,6 +1,6 @@
 # Eclipse
 bin/
-
+.settings/
 # Backup
 *.bak
 *~
