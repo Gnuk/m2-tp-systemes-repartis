@@ -16,22 +16,21 @@ public class Main {
 
 		// Creation des threads pour initialiser les objets
 		
-			// Thread Application
-		
-			Application tapp = new Application() ;
-			tapp.start();
-		
+
 			// Thread Section critique
 		
-			SectionCritique tsec = new SectionCritique() ;
+			X mutex = new X();
+			
+			Thread tapp = new Thread(new Application(mutex));
+			tapp.start();
+			
+			Thread tsec = new Thread(mutex) ;	
 			tsec.start();
 		
+			// Thread Application
 			
-			// Thread Network
-			
-			Network tnet = new Network() ;
-			tnet.start();
-			
+				
+	
 			
 				
 			
