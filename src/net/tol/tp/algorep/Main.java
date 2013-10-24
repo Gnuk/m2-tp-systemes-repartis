@@ -27,7 +27,13 @@ public class Main {
 			tsec.start();
 		
 			
-			// Thread 
+			// Thread Network
+			
+			Network tnet = new Network() ;
+			tnet.start();
+			
+			
+				
 			
 	}
 
