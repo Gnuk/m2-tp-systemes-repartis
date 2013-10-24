@@ -1,0 +1,6 @@
+# Eclipse
+bin/
+
+# Backup
+*.bak
+*~
